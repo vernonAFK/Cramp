@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white: rgb(255, 255, 255);
+    --transparent-white: rgba(255, 255, 255, 0.397);
+    --transparent-white-double: rgba(255, 255, 255, 0.082);
+}
+
+body {
+    background-image: url('img/bg.jpg');
+    font-family: 'Century Gothic';
+    font-weight: bold;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 4%;
+}
+
+header img {
+    width: 15%;
+}
+
+header a {
+    color: var(--transparent-white);
+    text-decoration: none;
+    transition: .2s;
+}
+
+header a:hover, header a:focus{
+    color: var(--white);
+    outline: none;
+}
+
+ul {
+    font-size: 30px;
+    margin-left: 4%;
+}
+
+li {
+    display: inline;
+}
+
+input {
+    outline: none;
+    border: 0;
+    font-family: 'Century Gothic';
+    font-weight: bold;
+    color: var(--transparent-white);
+    background-color: var(--transparent-white-double);
+    font-size: 26px;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.397);
+    font-weight: bold;
+    transition: .5s all;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+    width: 70%;
+    cursor: pointer;
+}
+
+header input {
+    width: 22%;
+    padding: .5% .7%;
+    border-radius: 20px;
+}
+
+input {
+    cursor: pointer;
+}
+
+main {
+    width: 50%;
+} 
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2.5%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+form input {
+    width: 65%;
+    padding: 1%;
+    border-radius: 15px;
+}
+
+input::file-selector-button {
+    background-color: var(--transparent-white-double);
+    color: var(--transparent-white);
+    border: 0;
+    border-radius: 10px;
+    margin-right: 2%;
+    padding: 1% 4%;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0% 5%;
+    color: var(--transparent-white);
+    font-size: 20px;
+    margin-top: 5.55%;
+}
+
+footer .email {
+    margin-left: 50%;
+}
+
+main .user {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 2%;
+    align-items: center;
+    gap: 10px;
+    margin-left: 5%;
+}
+
+.user div {
+    padding: 1.5%;
+    color: var(--transparent-white);
+    background-color: var(--transparent-white-double);
+    border-radius: 15px;
+}
+
+.first-name, .last-name, .date, .user .email, .subs {
+    width: 45%;
+    font-size: 24px;
+}
+
+.subs {
+    height: 100px;
+}
+
+input:hover::placeholder, input:focus::placeholder  {
+    transform: translateY(-50px);
+}
+
+input[type="submit"] {
+    transition: .3s all;
+}
+
+input[type="submit"]:hover, input[type="submit"]:focus  {
+    background-color: var(--transparent-white);
+}
+
+.photo img{
+    width: 200px;
+    height: 200px;
+    margin-top: 2px;
+    border-radius: 10px;
+}
+
+form[action="edit.php"] {
+    margin-top: 0%;
+    margin-left: 0%;
+}
+
+textarea, .code {
+    width: 60vw;
+    height: 50vh;
+    resize: none;
+    background-color: transparent;
+    font-size: 1.05vw;
+    color: var(--white);
+    border: 3px solid var(--white);
+    border-radius: 15px;
+    outline: none;
+    font-weight: bold;
+}
+
+.buttons {
+    display: flex;
+    width: 50%;
+    margin: auto;
+    gap: 20px;
+}
+
+.buttons a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1vw;
+    margin-top: 2%;
+}
+
+.code {
+    margin: 9.9% auto;
+}
